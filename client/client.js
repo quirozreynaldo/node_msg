@@ -28,7 +28,7 @@ async function send() {
   console.log("Sending Push...");
   // await fetch("https://crmovil.motion-server.com/nodejs_msg/node_push_notifications-master:5000/subscribe", {
   await fetch("https://nodepusnotifications.herokuapp.com/subscribe", {
-    method: "POST",
+    method: "POST",mode: 'cors',
     body: JSON.stringify(subscription),
     headers: {
       "content-type": "application/json"
