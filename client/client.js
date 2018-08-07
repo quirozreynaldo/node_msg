@@ -26,7 +26,8 @@ async function send() {
 
   // Send Push Notification
   console.log("Sending Push...");
-  await fetch("/subscribe", {
+  // await fetch("https://crmovil.motion-server.com/nodejs_msg/node_push_notifications-master:5000/subscribe", {
+  await fetch("https://morning-temple-96461.herokuapp.com/subscribe", {
     method: "POST",
     body: JSON.stringify(subscription),
     headers: {
