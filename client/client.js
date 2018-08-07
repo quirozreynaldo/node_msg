@@ -26,7 +26,7 @@ async function send() {
 
   // Send Push Notification
   console.log("Sending Push...");
-  console.log(subscription.endpoint);
+  console.log(JSON.stringify(subscription));
   
 
   // await fetch("https://crmovil.motion-server.com/nodejs_msg/node_push_notifications-master:5000/subscribe", {
